@@ -251,4 +251,210 @@ and break lines.
             </tbody>
         </table>
     </div>    
+    
+    <div class="container" id="TYPOGRAPHY">
+        <h1>HTML TYPOGRAPHY(<a href="#top">top</a>)</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Markup</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paragraph</td>
+                    <td><code>&lt;p&gt;This is a paragraph.&lt;p1&gt;</code></td>
+                    <td><p>This is a paragraph.</p></td>
+                </tr>
+                <tr>
+                    <td>Span</td>
+                    <td><code>&lt;span&gt;This is a span.&lt;span&gt;</code></td>
+                    <td><span>This is a span.</span></td>
+                </tr>
+                <tr>
+                    <td>Link</td>
+                    <td><code>&lt;a href=""&gt;This is a link.&lt;/a&gt;</code></td>
+                    <td><a href="">This is a link.</a></td>
+                </tr>
+                <tr>
+                    <td>Ordered List</td>
+                    <td>
+                        <code>
+                        <pre>
+&lt;ol&gt;<br>
+    &lt;li&gt;Step 1&lt;/li&gt;
+    &lt;li&gt;Step 2&lt;/li&gt;
+    &lt;li&gt;Step 3&lt;/li&gt;
+&lt;/ol&gt;
+                        </pre>
+                        </code>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>Step 1</li>
+                            <li>Step 2</li>
+                            <li>Step 3</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Unordered List</td>
+                    <td>
+                        <code>
+                        <pre>
+&lt;ul&gt;<br>
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+                        </pre>
+                        </code>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Horizontal Rule</td>
+                    <td>
+                        <code>
+                            <pre>
+This content is above the Horizontal Rule
+&lt;hr&gt;
+This content is below the Horizontal Rule
+                            </pre>
+                        </code>
+                    </td>
+                    <td>
+                        This content is above the Horizontal Rule
+                        <hr>
+                        This content is below the Horizontal Rule
+                    </td>
+                </tr>
+                <tr>
+                    <td>Break Line</td>
+                    <td><code>This content has a &lt;br&gt; break line.</code></td>
+                    <td>This content has a<br>break line.</td>
+                </tr>
+                <tr>
+                    <td>Preformat Text</td>
+                    <td>
+                        <code>
+                            <pre>
+&lt;pre&gt;
+This content preserves      white spaces
+and break lines.
+&lt;/pre&gt;
+                            </pre>  
+                        </code>
+                    </td>
+                    <td>
+                        <pre>
+This content preserves      white spaces
+and break lines.
+                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Computer Code</td>
+                    <td>
+                        
+                        <code>
+                            <pre>
+&lt;code&gt;
+    Console.WriteLine("Hello World!")
+&lt;code&gt;
+                            </pre>
+                            
+                        </code>
+                    </td>
+                    <td>	
+                        <code>
+                            Console.WriteLine("Hello World!")
+                        <code>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container" id="MEDIA"></div>
+        <h1>HTML MEDIA(<a href="#top">top</a>)</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Markup</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Image</td>
+                    <td><code>&lt;img src="source.jpg" alt="alternate text"&gt;</code></td>
+                    <td><img src=" https://picsum.photos/320/240" alt="alternate text">	
+                    </td>
+                </tr>
+                <tr>
+                    <td>Video</td>
+                    <td>
+                        <code>
+                        <pre>
+&lt;video&gt;
+    &lt;source src="source.mp4" type="video/mp4"&gt;
+    &lt;source src="source.ogg" type="video/ogg"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+                        </pre>
+                        </code>
+                    </td>
+                    <td>
+                        <video controls width="320" height="270"> 
+                            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Audio</td>
+                    <td>
+                        <code>
+                        <pre>
+&lt;aduio&gt; controls
+    &lt;source src="source.ogg" type="audio/ogg"&gt;
+    &lt;source src="source.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+                        </pre>
+                        </code>
+                    </td>
+                    <td>
+                        <aduio controls> 
+                            <source src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov" type="audio/ogg">
+                            <source src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IFrame</td>
+                    <td>
+                        <code>
+                            &lt;iframe src="url"&gt; &lt;/iframe&gt;
+                        </code>
+                    </td>
+                    <td>
+                        <iframe src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGRGfdqqK0&#x2F;a4g7Fq1ZCb-A6DrYhHa-rQ&#x2F;view?embed" width="320"> </iframe>
+                    </td>
+            </tbody>
+        </table>
+    </div>
 </html>
