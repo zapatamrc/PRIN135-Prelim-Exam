@@ -3,16 +3,192 @@
     <head>
         <style>
             h1 { font-size: 2em; }
-           </style>           
+        </style>           
     </head>
-    <h1>PRIN-135: HTML Cheatsheet</h1>
+    <h1 id="top">PRIN-135: HTML Cheatsheet</h1>
     <ul>
-        <a href="#HEADERS"><li>HTML HEADERS</li></a>
-        <a href="#TYPOGRAPHY"><li>HTML TYPOGRAPHY</li></a>
-        <a href="#FORMATTING"><li>HTML FORMATTING</li></a>
-        <a href="#MEDIA"><li>HTML MEDIA</li></a>
-        <a href="#TABLE"><li>HTML TABLE</li></a>
-        <a href="#FORMS"><li>HTML FORMS</li></a>
+        <li><a href="#HEADERS">HTML HEADERS</a></li>
+        <li><a href="#TYPOGRAPHY">HTML TYPOGRAPHY</a></li>
+        <li><a href="#FORMATTING">HTML FORMATTING</a></li>
+        <li><a href="#MEDIA">HTML MEDIA</a></li>
+        <li><a href="#TABLE">HTML TABLE</a></li>
+        <li><a href="#FORMS">HTML FORMS</a></li>
     </ul>
+    <div class="container" id="HEADERS">
+        <h1>HTML HEADERS(<a href="#top">top</a>)</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Markup</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Heading 1</td>
+                    <td><code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code></td>
+                    <td><h1>Heading 1</h1></td>
+                </tr>
+                <tr>
+                    <td>Heading 2</td>
+                    <td><code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code></td>
+                    <td><h2>Heading 2</h2></td>
+                </tr>
+                <tr>
+                    <td>Heading 3</td>
+                    <td><code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code></td>
+                    <td><h3>Heading 3</h3></td>
+                </tr>
+                <tr>
+                    <td>Heading 4</td>
+                    <td><code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code></td>
+                    <td><h4>Heading 4</h4></td>
+                </tr>
+                <tr>
+                    <td>Heading 5</td>
+                    <td><code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code></td>
+                    <td><h5>Heading 5</h5></td>
+                </tr>
+                <tr>
+                    <td>Heading 6</td>
+                    <td><code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code></td>
+                    <td><h6>Heading 6</h6></td>
+                </tr>
 
+            </tbody>
+        </table>
+    </div>
+    <div class="container" id="TYPOGRAPHY">
+        <h1>HTML TYPOGRAPHY(<a href="#top">top</a>)</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Markup</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paragraph</td>
+                    <td><code>&lt;p&gt;This is a paragraph.&lt;p1&gt;</code></td>
+                    <td><p>This is a paragraph.</p></td>
+                </tr>
+                <tr>
+                    <td>Span</td>
+                    <td><code>&lt;span&gt;This is a span.&lt;span&gt;</code></td>
+                    <td><span>This is a span.</span></td>
+                </tr>
+                <tr>
+                    <td>Link</td>
+                    <td><code>&lt;a href=""&gt;This is a link.&lt;/a&gt;</code></td>
+                    <td><a href="">This is a link.</a></td>
+                </tr>
+                <tr>
+                    <td>Ordered List</td>
+                    <td>
+                        <code>
+                        <pre>
+&lt;ol&gt;<br>
+    &lt;li&gt;Step 1&lt;/li&gt;
+    &lt;li&gt;Step 2&lt;/li&gt;
+    &lt;li&gt;Step 3&lt;/li&gt;
+&lt;/ol&gt;
+                        </pre>
+                        </code>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>Step 1</li>
+                            <li>Step 2</li>
+                            <li>Step 3</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Unordered List</td>
+                    <td>
+                        <code>
+                        <pre>
+&lt;ul&gt;<br>
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+                        </pre>
+                        </code>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Horizontal Rule</td>
+                    <td>
+                        <code>
+                            <pre>
+This content is above the Horizontal Rule
+&lt;hr&gt;
+This content is below the Horizontal Rule
+                            </pre>
+                        </code>
+                    </td>
+                    <td>
+                        This content is above the Horizontal Rule
+                        <hr>
+                        This content is below the Horizontal Rule
+                    </td>
+                </tr>
+                <tr>
+                    <td>Break Line</td>
+                    <td><code>This content has a &lt;br&gt; break line.</code></td>
+                    <td>This content has a<br>break line.</td>
+                </tr>
+                <tr>
+                    <td>Preformat Text</td>
+                    <td>
+                        <code>
+                            <pre>
+&lt;pre&gt;
+This content preserves      white spaces
+and break lines.
+&lt;/pre&gt;
+                            </pre>  
+                        </code>
+                    </td>
+                    <td>
+                        <pre>
+This content preserves      white spaces
+and break lines.
+                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Computer Code</td>
+                    <td>
+                        
+                        <code>
+                            <pre>
+&lt;code&gt;
+    Console.WriteLine("Hello World!")
+&lt;code&gt;
+                            </pre>
+                            
+                        </code>
+                    </td>
+                    <td>	
+                        <code>
+                            Console.WriteLine("Hello World!")
+                        <code>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>    
 </html>
