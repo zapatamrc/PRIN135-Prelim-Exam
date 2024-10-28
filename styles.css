@@ -2,13 +2,27 @@ html    {
     font-family: 'Didact Gothic', sans-serif;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 nav {
-    width: 200px;
+    width: 12%;
     background-color: #f4f4f4; 
-    padding: 15px;
     position: sticky; 
     top: 0; 
     height: 100vh; 
+    border: 1px solid #1c1c1c;
+}
+
+#bar  {
+    list-style-type: none;
+}
+
+#bars{
+    border: 1px solid #1c1c1c; 
+    padding: 10px;
 }
 
 .content {
@@ -31,4 +45,9 @@ h1      {
 .container {
     margin-left: 15%;
     grid-template: 25%;
+    justify-items: stretch;
+}
+
+body {
+    margin-top: -100vh;
 }
