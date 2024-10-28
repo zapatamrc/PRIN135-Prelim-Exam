@@ -1,14 +1,14 @@
-html    {
+html {
     font-family: 'Didact Gothic', sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 nav {
-    width: 13%;
+    width: 15%; /* Adjusted for better spacing */
     background-color: #f4f4f4; 
     position: sticky; 
     top: 0; 
@@ -16,47 +16,69 @@ nav {
     border-right: 3px solid #1c1c1c;
 }
 
-#bar: {
+#bar {
     list-style-type: none;
 }
 
-#bars{
+#bars {
     border: 1px solid #1c1c1c; 
     padding: 10px;
 }
 
 #bars a {
     color: black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
 }
 
+#bars a:hover {
+    background-color: #ED0A3F;
+    color: white;
+}
 
 .content {
-    margin-left: 220px; 
+    display: flex;
+    margin-left: 15%; 
     padding: 15px;
-    flex: 1; 
 }
 
 .cr {
     padding: 10px;
 }
 
-h1      { 
+h1 { 
     font-size: 2em;
 }
 
-.top    {
-    font-style: bold;
+.top {
+    font-weight: bold;
     background: linear-gradient(#ED0A3F, #1CAC78, #0066FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .container {
-    margin-left: 15%;
-    grid-template: 25%;
-    justify-items: stretch;
+    margin: 3% 15%;
 }
 
 body {
-    margin-top: -100vh;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #1c1c1c;
+    width: 33.33%;
+}
+
+th {
+    background-color: #f4f4f4;
 }
