@@ -5,6 +5,8 @@
             h1 { font-size: 2em; }
         </style>           
     </head>
+    <title>Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css">
     <h1 id="top">PRIN-135: HTML Cheatsheet</h1>
     <ul>
         <li><a href="#HEADERS">HTML HEADERS</a></li>
@@ -453,6 +455,80 @@ and break lines.
                     <td><code>Thi&lt;tfoot&gt;&lt;/tfoot&gt;</code></td>
                 </tr>
 
+            </tbody>
+        </table>
+    </div>
+    <div class="container" id="FORMS">
+        <h1>HTML Forms <a href="#top">(top)</a></h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Markup</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Label</td>
+                    <td><code>&lt;label&gt;Label:&lt;/label&gt;</code></td>
+                    <td><label>Label:</label></td>
+                </tr>
+                <tr>
+                    <td>Input - Textbox</td>
+                    <td><code>&lt;input type="text" name="name"&gt;</code></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Input - Numbers</td>
+                    <td><code>&lt;input type="number" name="number"&gt;</code></td>
+                    <td><input type="number" name="number"></td>
+                </tr>
+                <tr>
+                    <td>Input - Checkbox</td>
+                    <td><code>&lt;input type="checkbox" name="checkbox"&gt;</code></td>
+                    <td><input type="checkbox" name="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Input - Radio</td>
+                    <td><code>&lt;input type="radio" name="radio"&gt; Option 1</code></td>
+                    <td>
+                        <input type="radio" name="radio" id="option1"> Option 1 <br>
+                        <input type="radio" name="radio" id="option2"> Option 2
+                    </td>
+                </tr>
+                <tr>
+                    <td>Input - Submit</td>
+                    <td><code>&lt;input type="submit" value="Submit"&gt;</code></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+                <tr>
+                    <td>Input - Button</td>
+                    <td><p>&lt;input type=&quot;button&quot; value=&quot;Click Me&quot;&gt;</p></td>
+                    <td><input type="button" value="Click Me"></td>
+                </tr>
+                <tr>
+                    <td>Select</td>
+                    <td><p>
+                        &lt;select name=&quot;name&quot;&gt;<br>
+                          &lt;option value=&quot;option1&quot;&gt;Option 1&lt;/option&gt;<br>
+                          &lt;option value=&quot;option2&quot;&gt;Option 2&lt;/option&gt;<br>
+                          &lt;option value=&quot;option3&quot;&gt;Option 3&lt;/option&gt;<br>
+                        &lt;/select&gt;
+                    </p></td>
+                    <td><select name="name">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Textarea</td>
+                    <td><p>
+                        &lt;textarea name=&quot;name&quot;&gt;Textarea here&lt;/textarea&gt;
+                    </p></td>
+                    <td><textarea name="name">Textarea here</textarea></td>
+                </tr>
             </tbody>
         </table>
     </div>    
