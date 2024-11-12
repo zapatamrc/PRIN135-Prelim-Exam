@@ -56,15 +56,14 @@ nav {
     flex-direction: column;
     margin-left: 15%;
     padding: 15px;
-    overflow-x: auto;
 }
 
 .container {
-    margin: 20px 0;
-    padding: 10px;
+    margin-top: 3%;
+    margin-left: 18%;
+    margin-right: 3%;
 }
 
-/* Table Styling */
 table {
     width: 100%;
     min-width: 600px;
