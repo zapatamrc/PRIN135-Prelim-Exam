@@ -74,6 +74,7 @@ th, td {
     padding: 8px;
     text-align: left;
     border: 1px solid #1c1c1c;
+    width: 33.3%;
 }
 
 th {
@@ -87,6 +88,9 @@ th {
     -webkit-text-fill-color: transparent;
 }
 
+footer {
+    padding: 10px;
+}
 
 @media (max-width: 768px) {
     #bar {
