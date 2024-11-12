@@ -92,48 +92,18 @@ footer {
     padding: 10px;
 }
 
-@media (max-width: 768px) {
-    #bar {
-        max-height: 40vh;
+@media (max-width: 475px) {
+    body {
+        flex-direction: column; /* Change to column layout */
+    }
+
+    nav {
+        width: 100%; /* Make the nav take full width */
+        height: auto; /* Let the nav take up as much space as needed */
+        padding: 10px; /* Adjust padding as needed */
     }
 
     .container {
-        padding: 10px;
-        margin: 10px 3%;
-    }
-}
-
-@media (max-width: 425px) {
-    nav {
-        width: 100%;
-        position: static;
-        height: auto;
-        border-right: none;
-        border-bottom: 3px solid #1c1c1c;
-        margin-bottom: 10px;
-    }
-
-    .content {
-        margin-left: 0;
-    }
-
-    #bar {
-        display: flex;
-        flex-direction: column;
-        max-height: 60vh;
-        overflow-y: auto;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    #bars a {
-        padding: 8px;
-        font-size: 1em;
-    }
-
-    table, th, td {
-        font-size: 0.9em;
+        padding-top: 60px; /* Add some space for the navbar */
     }
 }
