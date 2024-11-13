@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     font-family: 'Didact Gothic', sans-serif;
+    overflow: hidden;
 }
 
 * {
@@ -9,20 +10,30 @@ body, html {
     box-sizing: border-box;
 }
 
-.containers {
+.container {
     display: flex;
     height: 100vh;
     width: 100vw;
 }
 
 .sidebar {
-    width: 10%;
+    width: 15%;
     background-color: #f4f4f4;
+    position: fixed;
+    height: 100%;
 }
 
 .main {
-    width: 90%;
-    background-color: #2ecc71; /* Green */
+    width: 85%;
+    background-color: #2ecc71;
+    margin-left: 15%;
+}
+
+.content-box {
+    padding: 20px;
+    font-size: 1.2rem;
+    background-color: #0f71f1; 
+    margin: 10px;
 }
 
 header {
