@@ -24,12 +24,12 @@ body, html {
 
 .main {
     width: 85%;
-    background-color: #2ecc71;
     margin-left: 15%;
+    overflow-y: auto;
 }
 
 .content-box {
-    display: inline;
+    display: block;
     padding: 20px;
     font-size: 1.2rem;
     margin: 10px;
