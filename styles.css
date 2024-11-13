@@ -88,50 +88,18 @@ footer {
     padding: 10px;
 }
 
-
-@media screen and (max-width: 768px) {
-    
-    .container {
-        display: block; 
-    }
-
-  
-    .sidebar {
-        width: 100%;
-        height: 60px; /* Set the height for top navbar */
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        padding: 10px;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-   
-    .main {
-        width: 100%;
-        margin-top: 60px;
-    }
-
-    .sidebar ul li {
-        padding: 8px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    th, td {
-        padding: 6px; 
-    }
-}
-
+/* Media query for screens 430px or smaller */
 @media screen and (max-width: 430px) {
+
+    /* Switch to block layout for smaller screens */
+    .container {
+        display: block;
+    }
+
+    /* Sidebar fixed at the top */
     .sidebar {
         width: 100%;
-        height: 60px;
+        height: 60px; /* Adjust the height for top navbar */
         position: fixed;
         top: 0;
         left: 0;
@@ -142,16 +110,43 @@ footer {
         flex-wrap: wrap;
     }
 
+    /* Main content pushed below the sidebar */
     .main {
         width: 100%;
-        margin-top: 60px; /* Add top margin to push content below navbar */
+        margin-top: 60px; /* Push content below navbar */
     }
 
+    /* Header and table adjustments */
     h1 {
-        font-size: 1.2em; /* Smaller header */
+        font-size: 1.2em;
     }
 
     th, td {
         padding: 6px; /* Smaller table padding */
+    }
+
+    table {
+        width: 100%;
+        min-width: auto; /* Allow table to fit the screen width */
+        border: 2px solid;
+        border-collapse: collapse;
+    }
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    th, td {
+        font-size: 14px;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    td {
+        max-width: 150px;
+        overflow: hidden;
     }
 }
