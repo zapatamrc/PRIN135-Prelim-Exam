@@ -1,40 +1,38 @@
 body, html {
     height: 100%;
     font-family: 'Didact Gothic', sans-serif;
-}
-
-* {
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.container {
+  }
+  
+  .container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
-}
-
-/* Sidebar - default for larger screens */
-.sidebar {
+  }
+  
+  .sidebar {
     width: 15%;
     background-color: #f4f4f4;
     position: fixed;
+    top: 0;
     height: 100vh;
     overflow-y: auto;
     transition: all 0.3s ease;
-}
-
-/* Main Content */
-.main {
+  }
+  
+  .main {
     width: 85%;
     margin-left: 15%;
     overflow-y: auto;
     padding: 10px;
-}
-
-/* Header */
-header {
+  }
+  
+  header {
     font-weight: bold;
     background: linear-gradient(#ED0A3F, #1CAC78, #0066FF);
     -webkit-background-clip: text;
@@ -42,53 +40,52 @@ header {
     text-align: center;
     padding: 10px;
     font-size: xx-large;
-}
-
-/* Navbar Links */
-#bar {
+  }
+  
+  #bar {
     list-style-type: none;
-}
-
-#bars {
+  }
+  
+  #bars {
     border: 1px solid #1c1c1c;
     padding: 10px;
     margin: 5px 0;
-}
-
-#bars a {
+  }
+  
+  #bars a {
     color: black;
     display: block;
     padding: 10px;
     text-decoration: none;
-}
-
-#bars a:hover {
+  }
+  
+  #bars a:hover {
     background-color: #ED0A3F;
     color: white;
-}
-
-table {
+  }
+  
+  table {
     width: 100%;
     min-width: 600px;
     margin-bottom: 20px;
-}
-
-th, td {
+  }
+  
+  th, td {
     padding: 8px;
     text-align: left;
     border: 1px solid #1c1c1c;
     width: 33.3%;
-}
-
-th {
+  }
+  
+  th {
     background-color: #f4f4f4;
-}
-
-footer {
+  }
+  
+  footer {
     padding: 10px;
-}
-
-@media screen and (max-width: 430px) {
+  }
+  
+  @media screen and (max-width: 430px) {
     .sidebar {
       position: fixed;
       top: 0;
@@ -96,7 +93,7 @@ footer {
       width: 100%;
       height: 100px;
       background-color: #f4f4f4;
-      z-index: 9999 !important; /* Increase specificity */
+      z-index: 9999;
       padding: 10px;
       display: flex;
       justify-content: space-around;
